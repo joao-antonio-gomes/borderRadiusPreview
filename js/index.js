@@ -14,13 +14,13 @@ inputs.forEach(input => {
     input.addEventListener('change', () => {
         switch (input.id) {
             case 'borda_esquerda-inferior':
-                box.style.borderBottomRightRadius = `${input.value}px`;
-                break;
-            case 'borda_esquerda-superior':
                 box.style.borderBottomLeftRadius = `${input.value}px`;
                 break;
-            case 'borda_direita-inferior':
+            case 'borda_esquerda-superior':
                 box.style.borderTopLeftRadius = `${input.value}px`;
+                break;
+            case 'borda_direita-inferior':
+                box.style.borderBottomRightRadius = `${input.value}px`;
                 break;
             case 'borda_direita-superior':
                 box.style.borderTopRightRadius = `${input.value}px`;
