@@ -1,0 +1,31 @@
+#box {
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.container_input {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 8px;
+}
+
+.container_form {
+    display: flex;
+    flex-direction: column;
+}
+
+#alterar {
+    margin-top: 8px;
+    width: 182px;
+    align-self: flex-end;
+}
