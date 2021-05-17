@@ -12,29 +12,23 @@
 </head>
 
 <body>
-    <section class="container">
-        <form class="container_form">
-            <div class="container_input">
-                <label for="borda_esquerda-superior">Borda Esquerda-Superior</label>
-                <input type="text" name="borda_esquerda-superior" id="borda_esquerda-superior">
-            </div>
-            <div class="container_input">
-                <label for="borda_direita-superior">Borda Direita-Superior</label>
-                <input type="text" name="borda_direita-superior" id="borda_direita-superior">
-            </div>
-            <div class="container_input">
-                <label for="borda_esquerda-inferior">Borda Esquerda-Inferior</label>
-                <input type="text" name="borda_esquerda-inferior" id="borda_esquerda-inferior">
-            </div>
-            <div class="container_input">
-                <label for="borda_direita-inferior">Borda Direita-Inferior</label>
-                <input type="text" name="borda_direita-inferior" id="borda_direita-inferior">
-            </div>
-            <button id="alterar">Alterar</button>
-        </form>
 
-        <div id="box"></div>
+    <section>
+        <form class="container">
+            <input type="text" name="borda_esquerda-superior" id="borda_esquerda-superior" value="0">
+            <input type="text" name="borda_direita-superior" id="borda_direita-superior" value="0">
+
+            <div id="box"></div>
+
+            <input type="text" name="borda_esquerda-inferior" id="borda_esquerda-inferior" value="0">
+            <input type="text" name="borda_direita-inferior" id="borda_direita-inferior" value="0">
+
+            <div id="code">
+                <code></code>
+            </div>
+        </form>
     </section>
+
     <script src='js/index.js'>
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

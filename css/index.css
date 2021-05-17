@@ -1,31 +1,52 @@
 #box {
     border: 2px solid black;
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     display: inline-block;
-    margin: 10px;
+    grid-area: box;
+}
+
+#code {
+    grid-area: code;
+    align-self: end;
+}
+
+#borda_esquerda-superior {
+    grid-area: ES;
+}
+
+#borda_esquerda-inferior {
+    grid-area: EI;
+}
+
+#borda_direita-superior {
+    grid-area: DS;
+}
+
+#borda_direita-inferior {
+    grid-area: DI;
+
 }
 
 .container {
-    display: flex;
-    align-content: space-around;
-    justify-content: space-around;
+    width: auto !important;
+    display: grid;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    grid-template-columns: 100px 50px 300px 50px 100px;
+    grid-template-rows: 100px 20px 300px 20px 100px;
+    grid-template-areas:
+        ". . . . ."
+        ". ES . DS ."
+        ". . box . ."
+        ". EI . DI ."
+        ". code code code .";
+    justify-items: center;
 }
 
-.container_input {
-    display: flex;
-    justify-content: space-between;
-    width: 400px;
-    margin-top: 8px;
-}
-
-.container_form {
-    display: flex;
-    flex-direction: column;
-}
-
-#alterar {
-    margin-top: 8px;
-    width: 182px;
-    align-self: flex-end;
+input {
+    width: 35px;
+    display: inline-block;
 }
